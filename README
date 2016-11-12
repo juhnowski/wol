@@ -1,0 +1,11 @@
+На БК:
+1)Проверить BIOS на наличие WakeOnLan[Enabled]
+2)sudo apt-get install pm-utils ethtool
+3)sudo ethtool -s eth0 wol g
+	eth0 - имя сетевого интерфейса посмотреть через ifconfig
+На станции:
+1)sudo apt-get install wakeonlan
+2)./WOLSkript.lua
+
+TODO:
+Нужно уточнить БК вводить в сон или гибернацию
